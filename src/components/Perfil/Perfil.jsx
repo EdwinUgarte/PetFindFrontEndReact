@@ -23,8 +23,11 @@ const Perfil = () => {
                     <img src={imagen} alt="logo_perrito" />
                     <hr />
                     {(mascota === null ?
+                        <div>
                         <div className="spinner-border" role="status">
                             <span className="visually-hidden">Loading...</span>
+                        </div>
+                        <div>Si la pagina no carga, posiblemente la mascota fue eliminada por un colaborador, vuelve a inicio o comunicate con soporte.</div>
                         </div>
                         : (
                             <div>

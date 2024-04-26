@@ -14,6 +14,7 @@ function Actualizar() {
 
     const { register, handleSubmit} = useForm();
 
+   
 
     useEffect(() => {
         findById(setMascota, params.id)
